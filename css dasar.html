@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>belajar css internal</title>
+    <style>
+        /* = di tandain dengan simbol # (pagar) */
+        /* CLASS = di tandain dengan simbol . (titik) */
+        #page-title {
+            color: blue;
+        }
+        #box1 {
+            width: 400px;
+            height: 400px;
+            background-color: chocolate;
+            border: 10px solid blue;
+        }
+        .box-title {
+            color:white;
+            font-size: 24px;
+        }
+        .box-text {
+            color: black;
+            font-size: 14px;
+        }
+        #box3 {
+            background-color: crimson;
+        }
+        #box2 {
+            border: 2px solid black; /* border tebal 2px, gaya solid, warna hitam */
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 20px;
+            background-color: rgb(155, 155, 66);
+        }
+
+        
+        #box2 h2 {
+            text-align: center;
+            font-size: 38px;
+        }
+        #box2 p {
+            color: white;
+        }
+        #box2 p b {
+            font-size: 28px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 id="page title">belajar css internal</h1>
+    <hr/>
+    <!-- box ke-1 -->
+     <div id="box1">
+        <h2 class="box-title">artikel baru</h2>
+        <p class="box-text">ini artikel baru bla bla bla....</p>
+     </div>
+     <!-- box ke-2 -->
+      <div id="box-2">
+        <h2>artikel lama</h2>
+        <p>ini artikel lama bang,boleh di 
+            <b>baca</b> boleh kagak....
+        </p>
+        <p>ini haruse terikut juga jadi <b>putih<b/> textnya</p>
+            <p></p>
+            
+      </div>
+      <!-- box ke-3 -->
+       <div.id="box3">
+        <h2 class="box title">artikel ke-3</h2>
+        <p class="box-text">ini artikel ke-3</p>
+       </div>
