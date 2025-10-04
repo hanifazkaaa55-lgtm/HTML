@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Harian Santri</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f6fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 10px 10px;
+    }
+
+    header h1 {
+      color: #2c3e91;
+      margin: 0;
+    }
+
+    header p {
+      margin: 5px 0 20px;
+      color: gray;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      display: inline-block;
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 10px 20px;
+      border-radius: 25px;
+      margin: 0 5px;
+      cursor: pointer;
+      font-size: 14px;
+      text-decoration: none;
+      color: #333;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #2c3e91;
+      color: #fff;
+    }
+
+    nav .active {
+      background: #2c3e91;
+      color: #fff;
+      border: none;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .container h2 {
+      font-size: 18px;
+      color: #2c3e91;
+      border-left: 4px solid gold;
+      padding-left: 10px;
+      margin-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table th, table td {
+      border: 1px solid #e0e0e0;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    table th {
+      background: #2c3e91;
+      color: white;
+    }
+
+    table tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jadwal Harian Santri</h1>
+    <p>Pekan ini: Materi HTML & CSS</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="jadwal.html" class="active">Jadwal</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="feedback.html">Feedback</a>
+  </nav>
+
+  <div class="container">
+    <h2>Jadwal Kegiatan Belajar</h2>
+    <table>
+      <tr>
+        <th colspan="2">Waktu</th>
+        <th>Hari</th>
+        <th>Kegiatan</th>
+      </tr>
+      <tr>
+        <th>Mulai</th>
+        <th>Selesai</th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>08:00</td>
+        <td>10:00</td>
+        <td>Senin</td>
+        <td>Pelajaran Web Dasar (Teori HTML)</td>
+      </tr>
+      <tr>
+        <td>10:00</td>
+        <td>10:30</td>
+        <td></td>
+        <td>ISTIRAHAT (Snack & Shalat Dhuha)</td>
+      </tr>
+      <tr>
+        <td>10:30</td>
+        <td>12:00</td>
+        <td>Senin</td>
+        <td>Latihan Praktikum HTML Table</td>
+      </tr>
+      <tr>
+        <td>14:00</td>
+        <td>16:00</td>
+        <td>Selasa</td>
+        <td>Pelajaran Web Dasar (Teori CSS & Box Model)</td>
+      </tr>
+      <tr>
+        <td>16:00</td>
+        <td>16:45</td>
+        <td>Selasa</td>
+        <td>Olahraga (Renang)</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

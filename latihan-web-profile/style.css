@@ -1,0 +1,212 @@
+/* Reset sederhana */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Warna latar untuk memvisualisasikan blok */
+header,
+.header {
+  background: #4caf50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav,
+.nav {
+  margin-top: 10px;
+  background: #45a049;
+  padding: 10px;
+}
+
+nav a,
+.nav a {
+  color: green;
+  text-decoration: none; /* hapus garis bawah */
+  border-radius: 22px; /* ubah sudut jadi bulat */
+  background: white;
+  padding: 6px 14px;
+  /* padding-top: 6px; */
+  /* padding-bottom: 6px; */
+  /* padding-left: 14px; */
+  /* padding-right: 14px; */
+  margin-right: 8px; /* jarak luar antar link */
+}
+
+.nav a.active {
+  background-color: green;
+  color: white;
+}
+
+main,
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: ;
+}
+
+/* Section / Artikel utama */
+section,
+.section {
+  flex: 2;
+  background: ;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+/* Article khusus */
+article,
+.article {
+  background: #75bef9;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Sidebar / aside */
+aside,
+.aside {
+  flex: 1;
+  background: #ffe082;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer,
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+/* Reset sederhana */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Warna latar untuk memvisualisasikan blok */
+header,
+.header {
+  background: #4caf50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav,
+.nav {
+  margin-top: 10px;
+  background: #45a049;
+  padding: 10px;
+}
+
+nav a,
+.nav a {
+  color: green;
+  text-decoration: none; /* hapus garis bawah */
+  border-radius: 22px; /* ubah sudut jadi bulat */
+  background: #fff;
+  padding: 6px 14px;
+  /* padding-top: 6px; */
+  /* padding-bottom: 6px; */
+  /* padding-left: 14px; */
+  /* padding-right: 14px; */
+  margin-right: 8px; /* jarak luar antar link */
+}
+
+.nav a.active {
+  background-color: green;
+  color: white;
+}
+
+main,
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+/* Section / Artikel utama */
+section,
+.section {
+  flex: 2;
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+/* Article khusus */
+article,
+.article {
+  background: #bbdefb;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Sidebar / aside */
+aside,
+.aside {
+  flex: 1;
+  background: #ffe082;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer,
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+
+ /* galeri grup */
+
+
+.gallery {
+  text-align: center;
+
+}
+
+.gallery h2 {
+  color: rgb(6, 6, 6);
+  font-size: 34px;
+}
+
+.gallery p {
+  color: #020202;
+  font-size: 16px;
+}
+.card {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.gallery .card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+.gallery .card figcaption {
+    background-color: maroon;
+    color: white;
+    padding: 4px;
+    font-size: 12px;
+    margin-top: -8px;
+}

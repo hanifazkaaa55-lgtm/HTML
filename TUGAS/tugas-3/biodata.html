@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Santri</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f6fa;
+      scroll-behavior: smooth;
+    }
+    header {
+      text-align: center;
+      padding: 30px 10px 15px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #0047ff;
+    }
+    header p {
+      margin: 5px 0 20px;
+      color: #666;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      background: #fff;
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      padding: 8px 18px;
+      border-radius: 20px;
+      color: #000;
+      font-weight: bold;
+      border: 1px solid transparent;
+    }
+    nav a.active, nav a:hover {
+      background-color: #0047ff;
+      color: #fff;
+    }
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      margin-top: 0;
+      font-size: 20px;
+      color: #0047ff;
+      display: flex;
+      align-items: center;
+    }
+    section h2::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 20px;
+      background: gold;
+      margin-right: 8px;
+      border-radius: 2px;
+    }
+    img.profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      float: left;
+      margin-right: 15px;
+    }
+    ul, ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+    a {
+      color: #0047ff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Biodata Santri</h1>
+    <p>Kelas 10 A — Asrama Ibnu katsir</p>
+  </header>
+
+  <!-- Navigasi -->
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="biodata.html" class="active">Biodata</a>
+    <a href="jadwal.html">Jadwal</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="feedback.html">Feedback</a>
+  </nav>
+
+  <!-- Biodata -->
+  <section id="biodata">
+    <h2>Biodata Singkat</h2>
+    <img src="../../IMAGES/photo_2025-09-15_07-27-41.jpg" alt="Foto Profil" class="profile">
+    <p>Assalamu'alaikum! Saya adalah siswa HSI Boarding School Purworejo. 
+    Saya menyukai belajar teknologi dan ingin menjadi pribadi yang selalu menebar manfaat. 
+    Saat ini saya sedang belajar materi HTML & CSS dasar untuk membuat website sederhana.</p>
+    <div style="clear: both;"></div>
+  </section>
+
+  <!-- Hobi -->
+  <section id="hobi">
+    <h2>Hobi</h2>
+    <ul>
+      <li>Ngoding</li>
+      <li>Membaca</li>
+      <li>Olahraga Lari dan Berenang</li>
+    </ul>
+  </section>
+
+  <!-- Cita-cita -->
+  <section id="citacita">
+    <h2>Cita-cita</h2>
+    <ol>
+      <li>Programmer</li>
+      <li>pemain bola</li>
+      <li>hafidz quran</li>
+      <li>tentara</li>
+    </ol>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <p>Whatsapp: <b>0889-0200-9481</b></p>
+    <p>Telegram: <b>@hanif azka assyamil</b></p>
+    <p>Instagram: <a href="https://www.instagram.com/hnf_azka33/" target="_blank">instagaram hnf_azka33</a></p>
+    <p>Email: email:hanifazkaaa55@gmail.com</p>
+  </section>
+
+</body>
+</html>
