@@ -1,202 +1,87 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulir Umpan Balik</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f6fa;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-
-    header {
-      text-align: center;
-      padding: 30px 10px 10px;
-    }
-
-    header h1 {
-      color: #2c3e91;
-      margin: 0;
-    }
-
-    header p {
-      margin: 5px 0 20px;
-      color: gray;
-    }
-
-    nav {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    nav a {
-      display: inline-block;
-      background: #fff;
-      border: 1px solid #ddd;
-      padding: 10px 20px;
-      border-radius: 25px;
-      margin: 0 5px;
-      cursor: pointer;
-      font-size: 14px;
-      text-decoration: none;
-      color: #333;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      background: #2c3e91;
-      color: #fff;
-    }
-
-    nav .active {
-      background: #2c3e91;
-      color: #fff;
-      border: none;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .container h2 {
-      font-size: 18px;
-      color: #2c3e91;
-      border-left: 4px solid gold;
-      padding-left: 10px;
-      margin-bottom: 15px;
-    }
-
-    form label {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-    }
-
-    form input, form textarea, form select {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border-radius: 8px;
-      border: 1px solid #ddd;
-      font-size: 14px;
-      box-sizing: border-box;
-    }
-
-    form textarea {
-      height: 120px;
-      resize: vertical;
-    }
-
-    .radio-group,
-.checkbox-group {
-  display: flex;
-  gap: 20px; /* jarak antar item */
-  margin-top: 8px;
-}
-
-.radio-group label,
-.checkbox-group label {
-  font-weight: normal;
-  display: flex;
-  align-items: center; /* biar rata tengah secara vertikal */
-}
-
-
-    .btn-group {
-      margin-top: 20px;
-      text-align: right;
-    }
-
-    .btn-group button {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 14px;
-      margin-left: 10px;
-    }
-
-    .btn-reset {
-      background: #ddd;
-      color: #333;
-    }
-
-    .btn-submit {
-      background: #2c3e91;
-      color: #fff;
-    }
-
-    .btn-submit:hover {
-      opacity: 0.9;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Umpan Balik</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Formulir Umpan Balik</h1>
-    <p>Kritik, Saran, dan Masukan</p>
-  </header>
+    <!-- Judul -->
+    <div class="container">
+     <h1>Formulir Umpan Balik</h1>
+     <h2>Kritik, Saran dan Masukan</h2>
+     <hr>
 
-  <nav>
-    <a href="index.html">Beranda</a>
-    <a href="biodata.html">Biodata</a>
-    <a href="jadwal.html">Jadwal</a>
-    <a href="galeri.html">Galeri</a>
-    <a href="feedback.html" class="active">Feedback</a>
+    <!-- Navigasi -->
+    <nav class="navbar">
+     <a href="index.html">Beranda</a>
+     <a href="biodata.html">Biodata</a>
+     <a href="jadwal.html">Jadwal</a>
+     <a href="galeri.html">Galeri</a>
+     <a href="feedback.html" class="active">Feedback</a>
   </nav>
+  <hr>
 
-  <div class="container">
-    <h2>Formulir Kontak & Saran</h2>
-    <p>Berikan masukan terbaik Anda untuk pengembangan website profil ini. Semua input bersifat wajib kecuali nama.</p>
-
+    <!-- formulir kontak dan saran -->
+    <div class="card">
+    <div class="highlight"><h3>Formulir Kontak & Saran</h3></div>
+    <p>Berikan Masukan terbaik Anda untuk pengembangan website Profile ini. semua input bersifat wajib kecuali nama.<p>
+    
+    <!-- kotak form -->
     <form>
-      <label for="nama">Nama Anda (Opsional):</label>
-      <input type="text" id="nama" placeholder="Tulis nama Anda">
-
-      <label for="email">Email Anda:</label>
-      <input type="email" id="email" placeholder="nama@email.com" required>
-
-      <label for="rating">Rating Kepuasan Website (Skala 1-10):</label>
-      <input type="number" id="rating" min="1" max="10" placeholder="Masukkan angka 1 hingga 10" required>
-
-      <label>Rekomendasi Website Ini?</label>
-      <div class="radio-group">
-        <label><input type="radio" name="rekomendasi" value="Ya" required> Ya, Sangat</label>
-        <label><input type="radio" name="rekomendasi" value="Mungkin"> Mungkin Saja</label>
-        <label><input type="radio" name="rekomendasi" value="Tidak"> Tidak</label>
+      <div class="form-group">
+        <label>Nama Anda (Opsional):</label>
+        <input type="text" placeholder="Tulis nama Anda">
       </div>
 
-      <label>Topik yang paling menarik:</label>
-      <div class="checkbox-group">
-        <label><input type="checkbox" name="topik" value="Biodata"> Biodata</label>
-        <label><input type="checkbox" name="topik" value="Jadwal"> Jadwal</label>
-        <label><input type="checkbox" name="topik" value="Galeri"> Galeri</label>
+      <div class="form-group">
+        <label>Email Anda:</label>
+        <input type="email" placeholder="nama@email.com" required>
       </div>
 
-      <label for="bidang">Saran Pengembangan di Bidang:</label>
-      <select id="bidang" required>
-        <option value="">-- Pilih Bidang --</option>
-        <option value="Desain">Desain</option>
-        <option value="Konten">Konten</option>
-        <option value="Navigasi">Navigasi</option>
-        <option value="Fitur">Fitur</option>
-      </select>
+      <div class="form-group">
+        <label>Rating Kepuasan Website (Skala 1-10):</label>
+        <input type="number" min="1" max="10" placeholder="Masukkan angka 1 hingga 10" required>
+      </div>
 
-      <label for="pesan">Pesan/Saran Lengkap:</label>
-      <textarea id="pesan" placeholder="Tulis pesan dan saran Anda secara detail di sini..." required></textarea>
+      <div class="form-group">
+        <label>Rekomendasi Website Ini?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="rekomendasi" required> Ya, Sangat</label>
+          <label><input type="radio" name="rekomendasi"> Mungkin Saja</label>
+          <label><input type="radio" name="rekomendasi"> Tidak</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Topik yang paling menarik:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox"> Biodata</label>
+          <label><input type="checkbox"> Jadwal</label>
+          <label><input type="checkbox"> Galeri</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Saran Pengembangan di Bidang:</label>
+        <select>
+          <option>-- Pilih Bidang --</option>
+          <option>Desain</option>
+          <option>Konten</option>
+          <option>Fitur</option>
+          <option>Lainnya</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Pesan/Saran Lengkap:</label>
+        <textarea placeholder="Tulis pesan dan saran Anda secara detail di sini..."></textarea>
+      </div>
 
       <div class="btn-group">
-        <button type="reset" class="btn-reset">Atur Ulang</button>
-        <button type="submit" class="btn-submit">Kirim Feedback</button>
+        <button type="reset" class="btn btn-reset">Atur Ulang</button>
+        <button type="submit" class="btn btn-submit">Kirim Feedback</button>
       </div>
     </form>
   </div>

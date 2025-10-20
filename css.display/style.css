@@ -1,0 +1,76 @@
+.card {
+  background: #f9f9f9;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  height: auto;
+  width: 250px;
+  border: 2px dashed #333;
+  border-radius: 6px;
+  margin: 20px;
+  padding: 10px;
+}
+
+/* area di dalam card */
+.area {
+  width: 200px;
+  height: 200px;
+  display: grid;
+  place-content: center;
+  background: yellow;
+  margin: 10px auto;
+}
+
+.area h3,
+.area p {
+  margin: 0 auto;
+}
+
+.area p {
+  font-size: 19px;
+  color: #666;
+}
+
+/* inline-block */
+.area-ib {
+  background: gold;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+}
+
+/* inline */
+.area-in {
+  background: wheat;
+}
+
+.area-in p {
+  background: rgb(101, 241, 101);
+  display: inline;
+  padding: 4px 6px;
+  margin: 2px;
+}
+
+/* none */
+.area-none {
+  background-color: tomato;
+  display: none;
+}
+
+.card:hover .area-none {
+  display: block;
+}
+
+/* flexbox basic */
+.flexbox-area {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.flexbox-area .card {
+  height: 150px;
+  width: 150px;
+}

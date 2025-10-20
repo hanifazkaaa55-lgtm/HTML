@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3: Display & Flexbox</title>
+    <!-- pico css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- beri space di kiri-kanan halaman -->
+    <div class="container">
+      <h1>CSS3: Display & Flexbox</h1>
+      <hr />
+      <h2>Bagian 1: Display</h2>
+
+      <!-- grid area -->
+      <div class="grid">
+        <!-- card: block -->
+        <div class="card">
+          <code>Display: block;</code>
+          <div class="area area-in">
+            <h3>Box a</h3>
+            <p>(Konten a)</p>
+          </div>
+          <div class="area area-in">
+            <h3>Box b</h3>
+            <p>(Konten b)</p>
+          </div>
+        </div>
+
+        <!-- card: inline-block -->
+        <div class="card">
+          <code>Display: inline-block;</code>
+          <div class="area area-ib">
+            <h3>Box c</h3>
+            <p>(Konten c)</p>
+          </div>
+          <div class="area area-ib">
+            <h3>Box d</h3>
+            <p>(Konten d)</p>
+          </div>
+        </div>
+
+        <!-- card: inline -->
+        <div class="card">
+          <code>Display: inline;</code>
+          <div class="area area-in">
+            <p>E1</p>
+            <p>E2</p>
+            <p>E3</p>
+            <p>E4</p>
+          </div>
+        </div>
+
+        <!-- card: none -->
+        <div class="card">
+          <code>Display: none;</code>
+          <div class="area area-none">
+            <h3>Box f</h3>
+            <p>(Konten f)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- flexbox section -->
+      <br />
+      <hr />
+      <br />
+      <h2>Bagian 2: Flexbox (Basic)</h2>
+      <div class="flexbox-area">
+        <div class="card"> [1] Anime</div>
+        <div class="card">[2] Bola</div>
+        <div class="card">[3]  Sport</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "bismillah";
+  src: url(font/Bismillah\ Script.ttf);
+}
+
+
+
+* {
+  margin: 0;
+  /* menghilangkan jarak di luar elemen */
+  padding: 0;
+  box-sizing: border-box;
+  /* Lebar dan tinggi hanya menghitung isi (content). */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* gaya tulisan */
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.9;
+  /* mengatur jarak vertikal antar baris teks (tinggi baris). */
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background-color: #0cf9e9;
+  text-align: center;
+  /* untuk meratakan teks */
+  padding: 30px 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  /* jarak spasi antar card */
+}
+
+.header h1 {
+  color: #0d0d0d;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  /* digunakan untuk mengatur jarak antar huruf dalam teks. */
+}
+
+.header p {
+  color: #6b7280;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Card */
+.card {
+  background-color: #0cf9e9;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(248, 15, 15, 0.1);
+  /* memberi bayanga halus di belakang elemen */
+  margin-bottom: 20px;
+  /* jarak antar card agar ada spasi */
+}
+
+.card h2 {
+  color: #090909;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.merah {
+  color: #e11d48; /* merah agak lembut */
+  font-weight: 600;
+}
+
+
+/* Quote */
+.quote {
+  background-color: #e0ecff;
+  border-left: 4px solid #0cf9e9;
+  padding: 15px 20px;
+  margin: 20px 0;
+  font-style: italic;
+  color: #1e3a8a;
+}
+
+/* Note */
+.note {
+  background-color: #e2feed;
+  color: #1cb93e;
+  border-left: 4px solid #0cd99f;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+/* Author */
+.author {
+  text-align: right;
+  /* Mengatur posisi teks ke kanan. */
+  font-weight: 500;
+}
+
+.signature {
+  text-align: right;
+  font-family: "bismillah";
+  color: #4a44ef;
+  font-size: 22px;
+  margin-top: -5px;
+}
