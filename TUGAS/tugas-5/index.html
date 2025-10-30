@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solusi Tugas CSS Komponen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Solusi Tugas CSS Komponen</h2>
+
+  <!-- 1. Dismissible Alert -->
+  <section class="card">
+    <h3>1. alert info</h3>
+    <div class="alert">
+      <span> ℹ️<b>info:</b>pastikan data anda sudah lengkap sebelum dikirim.</span>
+      <button class="close-btn" onclick="this.parentElement.style.display='none'">❌</button>
+    </div>
+  </section>
+
+  <!-- 2. Profile Card dengan Status Badge -->
+  <section class="card">
+    <h3>2. Profile Card dengan Status Badge</h3>
+    <div class="profile-card">
+      <div class="profile-pic">
+        <img src="../../IMAGES/photo_2025-09-15_07-27-41.jpg" alt="Hanif azka">
+        <span class="status-badge"></span>
+      </div>
+      <h4>Hanif Azka</h4>
+      <p>UI/UX Designer</p>
+    </div>
+  </section>
+
+    <!-- 3. Pricing Card -->
+  <section class="card">
+    <h3>3. Pricing Card</h3>
+
+    <div class="pricing-container">
+      <!-- Card 1 -->
+      <div class="pricing-card">
+        <h4>Basic</h4>
+        <p class="price">Rp50.000</p>
+        <p>1 Project</p>
+        <p>Community Support</p>
+        <button class="btn">Pilih Paket</button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="pricing-card featured">
+        <h4>Pro</h4>
+        <p class="price">Rp150.000</p>
+        <p>5 Projects</p>
+        <p>Priority Support</p>
+        <button class="btn">Pilih Paket</button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="pricing-card">
+        <h4>Enterprise</h4>
+        <p class="price">Rp300.000</p>
+        <p>Unlimited Projects</p>
+        <p>Dedicated Support</p>
+        <button class="btn">Pilih Paket</button>
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+</html>

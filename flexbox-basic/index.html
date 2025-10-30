@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-Dasar</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- beri space dikiri kanan halaman -->
+    <div class="container">
+        <h1>Latihan Tugas Flexbox</h1>
+        <hr/>
+        <h2>Latihan 1: pricing-area</h2>
+        <!-- wadah/parent flexbox -->
+        <div class="pricing-area">
+            <!-- flex items = semua -->
+            <div class="card">basic</div>
+            <div class="card pro-blue">pro</div>
+            <div class="card">enterprise</div>
+        </div>
+        <h2>latihan 2: alert info</h2>               
+        <div class="alert">
+            <p>ℹ️ info: harap buang sampah pada tempatnya</p>
+            <button type="button"
+            onclick="this.parentElement.style.display='none'">
+                ❌
+            </button>
+        
+        </div>
+    </div>        
+</body>
+</html>
