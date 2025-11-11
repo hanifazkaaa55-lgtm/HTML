@@ -318,3 +318,109 @@ tr:nth-child(even) {
       background: #2563eb;
       color: white;
     }
+    /* 📐 Responsif */
+    @media (min-width: 600px) and (max-width: 1023px) {
+  .menu {
+    flex-direction: row;
+    /* elemen anak (misal tombol/menu link) ditata menyamping (dari kiri ke kanan). */
+    flex-wrap: wrap;
+    /* kalau elemen tidak cukup dalam satu baris, maka akan turun ke baris berikutnya. */
+    justify-content: center;
+    /* semua item menu diletakkan di tengah secara horizontal. */
+  }
+  .menu a {
+    flex: 1 1 40%;
+    margin: 5px;
+  }
+    
+    }
+
+    /* ===================  RESPONSIVE DESIGN  ================== */
+/* ========================================================= */
+
+/* Tablet (<= 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 90%;   /* batasi lebar kontainer agar tidak memenuhi layar penuh */
+    padding: 10px;  /* memberi ruang dalam di sekitar isi; mencegah elemen menempel ke tepi. */
+  }
+
+  .navbar ul {
+    gap: 8px;   /* mengatur jarak antar elemen dalam flexbox atau grid. */
+  }
+
+  .navbar a {
+    padding: 8px 14px;
+    font-size: 13px;  /* mengatur ukuran font elemen. */
+    display: block; /* membuat elemen berperilaku seperti “blok”. */
+  }
+
+  .video iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .galeri-card {
+    width: 45%;
+  }
+}
+/* ==================================================== */
+/* =================== responsiv design =============== */
+/* ==================================================== */
+/* HP (<= 600px) */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    /* tata menu vertikal (ke bawah). */
+    align-items: center;
+    /* mengatur posisi elemen anak secara horizontal di tengah. */
+  }
+
+  .navbar a {
+    padding: 8px 14px;
+    font-size: 15px;
+    display: block;
+  }
+
+  .avatar .profile-img {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+  }
+
+  .galeri-card {
+    width: 100%;
+  }
+
+  .video iframe {
+    width: 100%;
+    /* lebar */
+    height: 200px; 
+    /* tinggi */
+  }
+
+  table, th, td {
+    font-size: 13px;
+    /* Ukuran huruf di tabel jadi kecil */
+    padding: 8px;
+    /* Menambahkan jarak dalam setiap sel (antara teks dan garis tabel */
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+
+
+}
